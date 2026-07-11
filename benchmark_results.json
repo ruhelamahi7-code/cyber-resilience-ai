@@ -1,0 +1,16 @@
+{
+  "dataset": "Synthetic benchmark based on CICIDS2017 Tuesday statistics",
+  "total_flows": 1000,
+  "attack_flows": 137,
+  "benign_flows": 863,
+  "threshold": 5,
+  "true_positives": 10,
+  "false_positives": 0,
+  "true_negatives": 625,
+  "false_negatives": 0,
+  "detection_rate": 100.0,
+  "false_positive_rate": 0.0,
+  "precision": 100.0,
+  "accuracy": 100.0,
+  "timestamp": "2026-07-10T12:31:24.339247"
+}

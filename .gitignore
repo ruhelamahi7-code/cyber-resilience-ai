@@ -1,0 +1,6 @@
+.env
+audit.db
+attack_logs.json
+blocklist.txt
+__pycache__/
+*.pyc
