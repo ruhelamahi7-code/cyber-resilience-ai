@@ -154,15 +154,15 @@ python3 benchmark.py
 ---
 
 ## 📁 File Structure
-cyber-resilience-ai/
-├── honeypot.py          # Fake login server — trap for attackers
-├── attacker.py          # Attack simulator (T1110 + T1078)
-├── detector.py          # 5-agent detection pipeline
-├── dashboard.py         # Live web dashboard
-├── benchmark.py         # Detection accuracy evaluation
-├── benchmark_results.json  # Benchmark output
-├── .gitignore           # Excludes .env and sensitive files
-└── README.md
+
+- `honeypot.py` — Fake login server, trap for attackers
+- `attacker.py` — Attack simulator (T1110 brute force + T1078 stolen credentials)
+- `detector.py` — 5-agent autonomous detection pipeline
+- `dashboard.py` — Live web dashboard (port 5002)
+- `benchmark.py` — Detection accuracy evaluation script
+- `benchmark_results.json` — Benchmark output (100% detection rate)
+- `.gitignore` — Excludes .env and sensitive files
+- `README.md` — This file
 
 ---
 
