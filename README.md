@@ -75,21 +75,22 @@ Full results in `benchmark_results.json`
 ---
 
 ## 🏗️ Architecture
-Attacker (simulated)
-↓
-Honeypot Server (Flask — port 5001)
 
-Logs all attempts to attack_logs.json
-Enforces blocklist before processing requests
-↓
-Detector Pipeline
-├── Agent 1: Watcher — reads logs, detects suspicious IPs
-├── Agent 2: Judge — MITRE ATT&CK mapping, confidence scoring
-├── Agent 3: Doer — writes to blocklist.txt
-├── Agent 4: Checker — HTTP verification (real 403 check)
-└── Agent 5: Fixer — Slack escalation if verification fails
-↓
-Audit Log (SQLite) + Dashboard (Flask — port 5002)
+**Attack Flow:**
+
+Attacker → Honeypot Server (port 5001) → attack_logs.json → Detector Pipeline → Audit Log + Dashboard (port 5002)
+
+**Detection Pipeline:**
+
+- Agent 1 — Watcher: reads logs, detects suspicious IPs
+- Agent 2 — Judge: MITRE ATT&CK mapping, confidence scoring
+- Agent 3 — Doer: writes IP to blocklist, enforced by honeypot
+- Agent 4 — Checker: sends real HTTP request, confirms 403 response
+- Agent 5 — Fixer: Slack escalation if verification fails
+
+**Key Design Decision:**
+
+The honeypot checks the blocklist before processing every request. This means blocking is real — not decorative. The Checker independently verifies by sending a live HTTP request from the blocked IP and confirming it gets refused.
 
 
 ---
