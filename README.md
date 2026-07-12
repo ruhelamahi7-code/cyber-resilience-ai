@@ -188,9 +188,9 @@ This system runs entirely on sandboxed infrastructure. All attack traffic is sel
 
 ## 👤 Team
 
-**Mahi Ruhela** — Full Stack Development & AI Pipeline Design
+**Mahi Ruhela** — Full Stack Development, AI Agent Pipeline, Dashboard & Frontend
 
-**Ity Shree** — Architecture & System Design
+**Ity Shree** — System Architecture, MITRE ATT&CK Integration, Benchmarking & Testing
 
 Built for ET AI Hackathon 2.0 — Phase 2 Build Sprint
 Problem Statement 7: AI-Driven Cyber Resilience for Critical National Infrastructure
