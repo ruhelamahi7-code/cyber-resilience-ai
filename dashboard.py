@@ -141,7 +141,7 @@ nav{display:flex;align-items:center;justify-content:space-between;padding:14px 2
 </head>
 <body>
 <nav>
-  <div class="nav-logo">shield Cyber<span>Shield</span> AI</div>
+  <div class="nav-logo">🛡 CyberShield AI</div>
   <div class="nav-badge"><div class="live-dot"></div>AUTONOMOUS RESPONSE ENABLED</div>
   <div class="nav-right" id="nav-time">--:--:--</div>
 </nav>
